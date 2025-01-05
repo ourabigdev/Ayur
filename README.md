@@ -23,7 +23,7 @@ Amlil is a lightweight framework built on top of the **Raylib** framework, desig
   - Cleaner, more extensible code.
   - NuGet package releases.
 
-This framework is designed to be small and fast, inspired by frameworks like **p5.js** and **Little JS**, with the goal of creating a tool that's lightweight yet capable of supporting the creation of full games. Although it doesn't intend to be used for high-end 3D games or very large 2D games (though that may be possible in the future), it aims to make game development more accessible and fun. **3D support may be added in the future.**
+**Note:**This framework is designed to be small and fast, inspired by frameworks like **p5.js** and **Little JS**, with the goal of creating a tool that's lightweight yet capable of supporting the creation of full games. Although it doesn't intend to be used for high-end 3D games or very large 2D games (though that may be possible in the future), it aims to make game development more accessible and fun. **3D support may be added in the future.**
 
 ---
 
