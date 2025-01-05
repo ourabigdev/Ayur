@@ -10,16 +10,11 @@ class Program
 
         Core.SetFps(60);
 
-
         while (!Graphics.ShouldCloseWindow())
         {
-            Graphics.Begin();
+            Graphics.Begin(true);
 
-            Graphics.Clear(1, 1, 1, 1);
-
-            Graphics.DrawCustomRectangle(500, 400, 100, 100);
-
-            Graphics.DrawFps(30, 30);
+            Graphics.BackgroundColor(255, 255, 255, 255);
 
             Graphics.End();
         }

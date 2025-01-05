@@ -1,14 +1,6 @@
 // CCore/framework.c
 #include "framework.h"
 
-
-#if defined(PLATFORM_DESKTOP)
-#define GLSL_VERSION            330
-#else   // PLATFORM_ANDROID, PLATFORM_WEB
-#define GLSL_VERSION            100
-#endif
-
-// Example function for drawing
 void DrawCustomRectangle(int x, int y, int width, int height) {
     DrawRectangle(x, y, width, height, RED);
 }
@@ -28,9 +20,12 @@ FRAMEWORK_API void Close()
     CloseWindow();
 }
 
-FRAMEWORK_API void Begin()
+FRAMEWORK_API void Begin(bool ShowFps)
 {
     BeginDrawing();
+    if (ShowFps) {
+        DrawFPS(20, 20);
+    }
 }
 
 FRAMEWORK_API void End()
@@ -38,14 +33,10 @@ FRAMEWORK_API void End()
     EndDrawing();
 }
 
-FRAMEWORK_API void Clear(int r, int g, int b, int a)
+FRAMEWORK_API void BackgroundColor(int r, int g, int b, int a)
 {
-    ClearBackground((Color) { r, g, b, a });
-}
-
-FRAMEWORK_API void DrawFps(int x, int y)
-{
-    DrawFPS(x, y);
+    Color c = {r, g, b, a};
+    ClearBackground(c);
 }
 
 FRAMEWORK_API void SetFps(int FPS)
