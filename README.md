@@ -108,9 +108,9 @@ Amlil is open to contributions. Feel free to fork the repository, submit issues,
 
 ## License
 
-Amlil is released under the MIT License, which allows you to freely use, modify, and distribute the framework. See the LICENSE file for more details.
+Amlil is released under the MIT License, which allows you to freely use, modify, and distribute the framework. See the [LICENSE](https://github.com/ourabigdev/Amlil/blob/master/LICENSE) file for more details.
 
 ## Developer
-Amlil is developed and maintained by OURABIG(hatim).
+Amlil is developed and maintained by ourabigdev(hatim).
 
 
