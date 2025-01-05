@@ -1,5 +1,5 @@
 # Add the C# executable project
-add_executable(AmlilCSharp Program.cs Graphics.cs)
+add_executable(AmlilCSharp Program.cs Graphics.cs Core.cs Color.cs)
 
 # Link the C# project with the core library
 target_link_libraries(AmlilCSharp PRIVATE AmlilCore)
