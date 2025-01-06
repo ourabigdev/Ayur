@@ -1,5 +1,5 @@
 # Add the shared library for the core
-add_library(AyurCore SHARED framework.c framework.h)
+add_library(AyurCore SHARED framework.c framework.h spriteAnimation.c)
 
 # Include Raylib headers
 target_include_directories(AyurCore PUBLIC ${raylib_SOURCE_DIR}/src)

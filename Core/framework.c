@@ -40,3 +40,10 @@ FRAMEWORK_API void SetFps(int FPS)
     SetTargetFPS(FPS);
 }
 
+FRAMEWORK_API void DrawAnimation(SpriteAnimation animation, Rectangle dest, Vector2 origin, float rotation, Color tint)
+{
+    int index = (int)(GetTime() * animation.framePerSecond) % animation.rectanglesLength;
+    Rectangle source = animation.rectangles[index];
+    DrawTexturePro(animation.atlas, source, dest, origin, rotation, tint);
+}
+

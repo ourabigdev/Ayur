@@ -1,5 +1,5 @@
 # Add the C# executable project
-add_executable(AyurCSharp Program.cs Graphics.cs Core.cs AyurColor.cs Colors.cs)
+add_executable(AyurCSharp Program.cs Graphics.cs Core.cs AyurColor.cs Colors.cs Rectangle.cs SpriteAnimation.cs)
 
 # Link the C# project with the core library
 target_link_libraries(AyurCSharp PRIVATE AyurCore)
