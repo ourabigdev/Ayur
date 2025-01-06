@@ -22,8 +22,5 @@ namespace AmlilCSharp
 
         [DllImport("Amlil", CallingConvention = CallingConvention.Cdecl)]
         public static extern void BackgroundColor(AmlilColor c);
-
-
-        
     }
 }

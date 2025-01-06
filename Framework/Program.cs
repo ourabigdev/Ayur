@@ -15,7 +15,7 @@ class Program
         {
             Graphics.Begin(true);
 
-            Graphics.BackgroundColor(c.White());
+            Graphics.BackgroundColor(c.Gray);
 
             Graphics.End();
         }
