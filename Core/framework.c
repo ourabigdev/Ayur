@@ -1,10 +1,6 @@
 // CCore/framework.c
 #include "framework.h"
 
-void DrawCustomRectangle(int x, int y, int width, int height) {
-    DrawRectangle(x, y, width, height, RED);
-}
-
 FRAMEWORK_API void Window(int width, int height, const char* title)
 {
     InitWindow(width, height, title);
@@ -33,9 +29,9 @@ FRAMEWORK_API void End()
     EndDrawing();
 }
 
-FRAMEWORK_API void BackgroundColor(int r, int g, int b, int a)
+FRAMEWORK_API void BackgroundColor(AmlilColor color)
 {
-    Color c = {r, g, b, a};
+    Color c = {color.r, color.g, color.b, color.a};
     ClearBackground(c);
 }
 
@@ -43,3 +39,4 @@ FRAMEWORK_API void SetFps(int FPS)
 {
     SetTargetFPS(FPS);
 }
+

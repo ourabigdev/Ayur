@@ -21,7 +21,7 @@ namespace AmlilCSharp
         public static extern void End();
 
         [DllImport("Amlil", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void BackgroundColor(int r, int g, int b, int a);
+        public static extern void BackgroundColor(AmlilColor c);
 
 
         
