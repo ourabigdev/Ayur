@@ -5,22 +5,22 @@ namespace AmlilCSharp
 {
     public class Graphics
     {
-        [DllImport("Amlil", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("Ayur", CallingConvention = CallingConvention.Cdecl)]
         public static extern void Window(int x, int y, string title);
 
-        [DllImport("Amlil", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("Ayur", CallingConvention = CallingConvention.Cdecl)]
         public static extern bool ShouldCloseWindow();
 
-        [DllImport("Amlil", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("Ayur", CallingConvention = CallingConvention.Cdecl)]
         public static extern void Close();
 
-        [DllImport("Amlil", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("Ayur", CallingConvention = CallingConvention.Cdecl)]
         public static extern void Begin(bool Showfps);
 
-        [DllImport("Amlil", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("Ayur", CallingConvention = CallingConvention.Cdecl)]
         public static extern void End();
 
-        [DllImport("Amlil", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void BackgroundColor(AmlilColor c);
+        [DllImport("Ayur", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void BackgroundColor(AyurColor c);
     }
 }

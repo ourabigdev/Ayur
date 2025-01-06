@@ -9,7 +9,7 @@ namespace AmlilCSharp
 {
     public class Core
     {
-        [DllImport("Amlil", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("Ayur", CallingConvention = CallingConvention.Cdecl)]
         public static extern void SetFps(int FPS);
     }
 }

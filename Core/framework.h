@@ -17,12 +17,12 @@
 #include "raylib.h"
 
 //framework type
-typedef struct AmlilColor {
+typedef struct AyurColor {
 	unsigned char r;
 	unsigned char g;
 	unsigned char b;
 	unsigned char a;
-}AmlilColor;
+}AyurColor;
 
 
 // Framework functions
@@ -31,7 +31,7 @@ FRAMEWORK_API bool ShouldCloseWindow();
 FRAMEWORK_API void Close();
 FRAMEWORK_API void Begin(bool ShowFps);
 FRAMEWORK_API void End();
-FRAMEWORK_API void BackgroundColor(AmlilColor color);
+FRAMEWORK_API void BackgroundColor(AyurColor color);
 FRAMEWORK_API void SetFps(int FPS);
 FRAMEWORK_API typedef struct Color;
 

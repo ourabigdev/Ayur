@@ -1,6 +1,6 @@
-# Amlil Framework
+# Ayur Framework
 
-Amlil is a lightweight framework built on top of the **Raylib** framework, designed for **simple game development** and **creative coding**. The core functionality, such as rendering, is implemented in **C** for optimal performance, while the framework itself is designed in **C#** to provide an easy-to-use API for developers. 
+Ayur is a lightweight framework built on top of the **Raylib** framework, designed for **simple game development** and **creative coding**. The core functionality, such as rendering, is implemented in **C** for optimal performance, while the framework itself is designed in **C#** to provide an easy-to-use API for developers. 
 
 > **Note:** The framework is still in its very early stages of development. It might switch to **SDL 3** or **SDL 3 GPU** if necessary to enhance performance or functionality.
 
@@ -64,7 +64,7 @@ Amlil is a lightweight framework built on top of the **Raylib** framework, desig
 4. **Run the Example Application:**
 
     ```
-    dotnet run --project build/Framework/AmlilCsharp.csproj
+    dotnet run --project build/Framework/AyurCsharp.csproj
     ```
 ---
 
@@ -91,7 +91,7 @@ Amlil is a lightweight framework built on top of the **Raylib** framework, desig
    cmake .. -G "Visual Studio 17 2022"
    ```
 
-   - Open the generated solution file (`Amlil.sln`) in Visual Studio.
+   - Open the generated solution file (`Ayur.sln`) in Visual Studio.
    - Build the solution using the desired configuration (Debug/Release).
 
 4. **Run the Example Application:**
@@ -102,15 +102,15 @@ Amlil is a lightweight framework built on top of the **Raylib** framework, desig
 
 ## Contributions
 
-Amlil is open to contributions. Feel free to fork the repository, submit issues, or open pull requests. Contributions can include bug fixes, feature enhancements, or documentation improvements.
+Ayur is open to contributions. Feel free to fork the repository, submit issues, or open pull requests. Contributions can include bug fixes, feature enhancements, or documentation improvements.
 
 ---
 
 ## License
 
-Amlil is released under the MIT License, which allows you to freely use, modify, and distribute the framework. See the [LICENSE](https://github.com/ourabigdev/Amlil/blob/master/LICENSE) file for more details.
+Ayur is released under the MIT License, which allows you to freely use, modify, and distribute the framework. See the [LICENSE](https://github.com/ourabigdev/Ayur/blob/master/LICENSE) file for more details.
 
 ## Developer
-Amlil is developed and maintained by ourabigdev(hatim).
+Ayur is developed and maintained by ourabigdev(hatim).
 
 

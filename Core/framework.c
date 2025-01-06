@@ -29,7 +29,7 @@ FRAMEWORK_API void End()
     EndDrawing();
 }
 
-FRAMEWORK_API void BackgroundColor(AmlilColor color)
+FRAMEWORK_API void BackgroundColor(AyurColor color)
 {
     Color c = {color.r, color.g, color.b, color.a};
     ClearBackground(c);

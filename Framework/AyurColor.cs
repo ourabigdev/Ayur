@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 namespace AmlilCSharp
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct AmlilColor
+    public struct AyurColor
     {
         public byte r;
         public byte g;
         public byte b;
         public byte a;
 
-        public AmlilColor(byte r, byte g, byte b, byte a = 255)
+        public AyurColor(byte r, byte g, byte b, byte a = 255)
         {
             this.r = r;
             this.g = g;

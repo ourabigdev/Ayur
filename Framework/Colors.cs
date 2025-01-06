@@ -8,12 +8,12 @@ namespace AmlilCSharp
 {
     public class Colors 
     {
-        public AmlilColor Black { get; } = new AmlilColor(0, 0, 0);
-        public AmlilColor White { get; } = new AmlilColor(255, 255, 255);
-        public AmlilColor Gray { get; } = new AmlilColor(130, 130, 130);
-        public AmlilColor Red { get; } = new AmlilColor(255, 0, 0);
-        public AmlilColor Green { get; } = new AmlilColor(0, 255, 0);
-        public AmlilColor Blue { get; } = new AmlilColor(0, 0, 255);
-        public AmlilColor Yellow { get; } = new AmlilColor(255, 255, 0);
+        public AyurColor Black { get; } = new AyurColor(0, 0, 0);
+        public AyurColor White { get; } = new AyurColor(255, 255, 255);
+        public AyurColor Gray { get; } = new AyurColor(130, 130, 130);
+        public AyurColor Red { get; } = new AyurColor(255, 0, 0);
+        public AyurColor Green { get; } = new AyurColor(0, 255, 0);
+        public AyurColor Blue { get; } = new AyurColor(0, 0, 255);
+        public AyurColor Yellow { get; } = new AyurColor(255, 255, 0);
     }
 }
