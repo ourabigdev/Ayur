@@ -40,10 +40,13 @@ FRAMEWORK_API void SetFps(int FPS)
     SetTargetFPS(FPS);
 }
 
-FRAMEWORK_API void DrawAnimation(SpriteAnimation animation, Rectangle dest, Vector2 origin, float rotation, Color tint)
+FRAMEWORK_API Texture2D LoadSprite(const char* path)
 {
-    int index = (int)(GetTime() * animation.framePerSecond) % animation.rectanglesLength;
-    Rectangle source = animation.rectangles[index];
-    DrawTexturePro(animation.atlas, source, dest, origin, rotation, tint);
+    return LoadTexture(path);
+}
+
+FRAMEWORK_API void DrawRect(Rect rectangle, AyurColor color)
+{
+    DrawRectangle(rectangle.posX, rectangle.posY, rectangle.width, rectangle.height, (Color){color.r, color.g, color.b, color.a});
 }
 

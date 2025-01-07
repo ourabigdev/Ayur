@@ -8,8 +8,20 @@ using System.Threading.Tasks;
 namespace AyurCSharp
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct Rectangle
+    public struct Rect
     {
-        public float x, y, width, height;
+        int posX;
+        int posY;
+        int height;
+        int width;
+
+        public Rect(int posX, int posY, int height, int width)
+        {
+            this.posX = posX;
+            this.posY = posY;
+            this.height = height;
+            this.width = width;
+        }
+
     }
 }
