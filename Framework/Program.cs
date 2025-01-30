@@ -17,7 +17,7 @@ class Program
 
             Graphics.BackgroundColor(Colors.Gray);
 
-            Graphics.DrawRect(rect, Colors.Red);
+            Graphics.DrawRect(rect, Colors.Black);
 
             Graphics.End();
         }
