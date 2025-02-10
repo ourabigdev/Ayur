@@ -24,7 +24,7 @@ Ayur is a lightweight, **game development** and **creative coding** framework bu
 
 ## 🔧 Requirements
 
-- **CMake** (min. version 3.14)
+- **CMake** (min. version 3.21)
 - **C** and **C#** compilers.
 - **Raylib** (automatically fetched during the build process for now).
 
