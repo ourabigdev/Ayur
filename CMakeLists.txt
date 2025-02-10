@@ -7,7 +7,7 @@ include(FetchContent)
 FetchContent_Declare(
     SDL
     GIT_REPOSITORY https://github.com/libsdl-org/SDL.git
-    GIT_TAG release-3.2.4  # Change to the latest version if needed
+    GIT_TAG main  # Change to the latest version if needed
 )
 
 # Ensure SDL is built properly
