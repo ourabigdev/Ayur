@@ -10,6 +10,6 @@ namespace AyurCSharp
     public class Core
     {
         [DllImport("Ayur", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void SetFps(int FPS);
+        public static extern void Window(string title, int w, int h);
     }
 }

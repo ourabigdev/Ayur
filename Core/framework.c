@@ -1,52 +1,57 @@
 // CCore/framework.c
 #include "framework.h"
 
-FRAMEWORK_API void Window(int width, int height, const char* title)
+FRAMEWORK_API void Window(const char* title, int w, int h)
 {
-    InitWindow(width, height, title);
-}
+	SDL_Window* window = NULL;
+	SDL_Renderer* renderer = NULL;
 
-FRAMEWORK_API bool ShouldCloseWindow()
-{
-    return WindowShouldClose();
-}
+	int result = SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS);
 
-FRAMEWORK_API void Close()
-{
-    CloseWindow();
-}
+	if (result < 0) {
+		SDL_Log("SDL_Init error: %s", SDL_GetError());
+		return -1;
+	}
 
-FRAMEWORK_API void Begin(bool ShowFps)
-{
-    BeginDrawing();
-    if (ShowFps) {
-        DrawFPS(20, 20);
-    }
-}
+	window = SDL_CreateWindow(title, w, h, 0);
 
-FRAMEWORK_API void End()
-{
-    EndDrawing();
-}
+	if (window == NULL) {
+		SDL_Log("SDL_CreateWindow error: %s", SDL_GetError());
+		return -2;
+	}
 
-FRAMEWORK_API void BackgroundColor(AyurColor color)
-{
-    Color c = {color.r, color.g, color.b, color.a};
-    ClearBackground(c);
-}
+	renderer = SDL_CreateRenderer(window, NULL);
+	if (renderer == NULL) {
+		SDL_Log("SDL_CreateRenderer error: %s", SDL_GetError());
+		return -3;
+	}
 
-FRAMEWORK_API void SetFps(int FPS)
-{
-    SetTargetFPS(FPS);
-}
+	SDL_Log("Window Initialized successfully");
 
-FRAMEWORK_API Texture2D LoadSprite(const char* path)
-{
-    return LoadTexture(path);
-}
+	SDL_Event event;
+	int quit = 0;
+	while (!quit) {
+		while (SDL_PollEvent(&event))
+		{
+			switch (event.type)
+			{
+				case SDL_EVENT_QUIT:
+					SDL_Log("SDL EVENT QUIT");
+					quit = 1;
+					break;	
+			}
+		}
 
-FRAMEWORK_API void DrawRect(Rect rectangle, AyurColor color)
-{
-    DrawRectangle(rectangle.posX, rectangle.posY, rectangle.width, rectangle.height, (Color){color.r, color.g, color.b, color.a});
+		SDL_SetRenderDrawColor(renderer, 0, 0, 0xff, 0xff);
+		SDL_RenderClear(renderer);
+		SDL_RenderPresent(renderer);
+		SDL_Delay(1);
+	}
+
+	SDL_DestroyRenderer(renderer);
+	SDL_DestroyWindow(window);
+	SDL_Quit();
+
+	SDL_Log("Window Closed");
 }
 

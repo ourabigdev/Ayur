@@ -1,16 +1,14 @@
 # Add the shared library for the core
 add_library(AyurCore SHARED framework.c framework.h)
 
-# Include Raylib headers
-target_include_directories(AyurCore PUBLIC ${raylib_SOURCE_DIR}/src)
+# Include SDL3 headers
+target_include_directories(AyurCore PUBLIC ${SDL_SOURCE_DIR}/include)
 
-# Link Raylib with the core library
-target_link_libraries(AyurCore PUBLIC raylib)
+# Link SDL3 with the core library
+target_link_libraries(AyurCore PUBLIC SDL3-static)
 
 # Set output properties for the shared library
-set_target_properties(AyurCore PROPERTIES
-    OUTPUT_NAME "Ayur"  # DLL/Shared library name
-)
+set_target_properties(AyurCore PROPERTIES OUTPUT_NAME "Ayur")
 
 # Post-build step: Copy the DLL to the runtime directory
 add_custom_command(TARGET AyurCore POST_BUILD

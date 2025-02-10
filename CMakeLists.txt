@@ -1,26 +1,23 @@
-cmake_minimum_required(VERSION 3.21)  # Use at least 3.21 to ensure compatibility
-
-# Project definition
+cmake_minimum_required(VERSION 3.21)
 project(Ayur LANGUAGES C CSharp)
 
-# Enable FetchContent for dependencies
 include(FetchContent)
 
-# Fetch Raylib
+# Fetch SDL3
 FetchContent_Declare(
-    raylib
-    GIT_REPOSITORY https://github.com/raysan5/raylib.git
-    GIT_TAG 5.5  # Replace with the desired version if necessary
+    SDL
+    GIT_REPOSITORY https://github.com/libsdl-org/SDL.git
+    GIT_TAG release-3.2.4  # Change to the latest version if needed
 )
 
-# Ensure dependencies are configured properly
-set(FETCHCONTENT_QUIET OFF)  # Show progress during fetching
-set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)  # Disable Raylib examples
-set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)  # Use static Raylib
+# Ensure SDL is built properly
+set(SDL_SHARED OFF CACHE BOOL "" FORCE)  # Disable shared SDL
+set(SDL_STATIC ON CACHE BOOL "" FORCE)   # Enable static SDL
+set(SDL_TEST OFF CACHE BOOL "" FORCE)    # Disable SDL test programs
 
-FetchContent_MakeAvailable(raylib)
+FetchContent_MakeAvailable(SDL)
 
-# Set output directories for libraries and executables
+# Set output directories
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)

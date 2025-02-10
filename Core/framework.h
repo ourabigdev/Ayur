@@ -10,35 +10,14 @@
 #endif
 
 #include <stdlib.h>
-#include <stdbool.h>
-#include "raylib.h"
-
-//framework type
-typedef struct AyurColor {
-	unsigned char r;
-	unsigned char g;
-	unsigned char b;
-	unsigned char a;
-}AyurColor;
-
-typedef struct Rect{
-	int posX;
-	int posY;
-	int height;
-	int width;
-}Rect;
+#include <stdio.h>
+#define SDL_MAIN_HANDLED
+#include <SDL3/SDL.h>
+#include <SDL3//SDL_main.h>
 
 
 // Framework functions
-FRAMEWORK_API void Window(int width, int height, const char * title);
-FRAMEWORK_API bool ShouldCloseWindow();
-FRAMEWORK_API void Close();
-FRAMEWORK_API void Begin(bool ShowFps);
-FRAMEWORK_API void End();
-FRAMEWORK_API void BackgroundColor(AyurColor color);
-FRAMEWORK_API void SetFps(int FPS);
-FRAMEWORK_API Texture2D LoadSprite(const char* path);
-FRAMEWORK_API void DrawRect(Rect rectangle, AyurColor color);
-FRAMEWORK_API typedef struct Color;
+FRAMEWORK_API void Window(const char* title, int w, int h);
+FRAMEWORK_API void Quit();
 
 #endif // FRAMEWORK_H
