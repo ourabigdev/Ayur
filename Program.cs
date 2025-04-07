@@ -1,5 +1,4 @@
 ﻿using Ayur;
-using SDL3;
 
 internal static class Program
 {
@@ -18,13 +17,13 @@ internal static class Program
         }
 
         var loop = true;
-        SDL.Event e;
+        AyurEvent e;
 
         while (loop)
         {
             while (window.PollEvent(out e))
             {
-                if (e.Type == (uint)SDL.EventType.Quit)
+                if (e.Type == AyurEventType.Quit)
                 {
                     loop = false;
                 }

@@ -9,7 +9,7 @@ namespace Ayur
 
         public bool Init()
         {
-            if (SDL.Init(SDL.InitFlags.Video) != false)
+            if (SDL.Init(SDL.InitFlags.Video) == false)
             {
                 SDL.LogError(SDL.LogCategory.System, $"SDL could not initialize: {SDL.GetError()}");
                 return false;
@@ -19,7 +19,7 @@ namespace Ayur
 
         public bool CreateWindowAndRender(string title, int width, int height, AyurColor renderDrawColor)
         {
-            if (SDL.CreateWindowAndRenderer(title, width, height, 0, out window, out renderer) != false)
+            if (SDL.CreateWindowAndRenderer(title, width, height, 0, out window, out renderer) == false)
             {
                 SDL.LogError(SDL.LogCategory.Application, $"Error creating window and renderer: {SDL.GetError()}");
                 return false;
@@ -28,9 +28,22 @@ namespace Ayur
             return true;
         }
 
-        public bool PollEvent(out SDL.Event e)
+        public bool PollEvent(out AyurEvent ayurEvent)
         {
-            return SDL.PollEvent(out e) != false;
+            if(SDL.PollEvent(out SDL.Event e))
+            {
+                if(e.Type == (uint)SDL.EventType.Quit)
+                {
+                    ayurEvent = new AyurEvent { Type = AyurEventType.Quit };
+                    return true;
+                }
+
+                //will add more events later
+                ayurEvent = new AyurEvent { Type = AyurEventType.None };
+                return true;
+            }
+            ayurEvent = default;
+            return false;
         }
 
         public void Clear()
