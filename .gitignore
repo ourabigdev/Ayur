@@ -1,2 +1,4 @@
 /build/
-/.vs/AyurSolution/FileContentIndex
+/.vs/
+/obj/
+/bin/
