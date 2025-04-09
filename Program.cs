@@ -3,7 +3,7 @@
 internal static class Program
 {
     [STAThread]
-    private static void Main()
+    private unsafe static void Main()
     {
         var window = new Window();
         if (!window.Init())
@@ -13,6 +13,15 @@ internal static class Program
 
         if (!window.CreateWindowAndRender("hello", 800, 600, new AyurColor(100, 149, 237)))
         {
+            return;
+        }
+
+        var texture = Texture.LoadTextureFromImage("Res/logo.png", window.renderer);
+        if(texture == null)
+        {
+            Console.WriteLine("Failed to load texture");
+            window.Destroy();
+            window.Quit();
             return;
         }
 
@@ -30,6 +39,9 @@ internal static class Program
             }
 
             window.Clear();
+
+            texture.Render(window.renderer, 100, 100, 200, 200);
+
             window.Present();
         }
 

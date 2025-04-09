@@ -6,7 +6,8 @@ namespace Ayur
     internal unsafe class Window
     {
         private SDL_Window* window;
-        private SDL_Renderer* renderer;
+        public SDL_Renderer* renderer;
+
 
         public bool Init()
         {
