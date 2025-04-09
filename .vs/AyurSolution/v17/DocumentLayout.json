@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|c:\\users\\ourab\\onedrive\\documents\\dev\\ayur\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|c:\\users\\ourab\\onedrive\\documents\\dev\\ayur\\ayur.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:ayur.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|c:\\users\\ourab\\onedrive\\documents\\dev\\ayur\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|c:\\users\\ourab\\onedrive\\documents\\dev\\ayur\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|c:\\users\\ourab\\onedrive\\documents\\dev\\ayur\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|c:\\users\\ourab\\onedrive\\documents\\dev\\ayur\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|c:\\users\\ourab\\onedrive\\documents\\dev\\ayur\\ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|c:\\users\\ourab\\onedrive\\documents\\dev\\ayur\\ayur.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:ayur.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,92 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-04-07T16:38:27.411Z",
+              "Title": "Ayur",
+              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Ayur.csproj",
+              "RelativeDocumentMoniker": "Ayur.csproj",
+              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Ayur.csproj",
+              "RelativeToolTip": "Ayur.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-09T11:14:59.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAowLUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-04-07T14:52:21.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Ayur.csproj",
-              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Ayur.csproj",
-              "RelativeDocumentMoniker": "Ayur.csproj",
-              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Ayur.csproj",
-              "RelativeToolTip": "Ayur.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-07T10:21:11.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Window.cs",
-              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Window.cs",
-              "RelativeDocumentMoniker": "Window.cs",
-              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Window.cs",
-              "RelativeToolTip": "Window.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAZAAAAAAAAAA==",
+              "Title": "Texture.cs",
+              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Texture.cs",
+              "RelativeDocumentMoniker": "Texture.cs",
+              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Texture.cs",
+              "RelativeToolTip": "Texture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T19:33:32.602Z",
+              "WhenOpened": "2025-04-09T10:44:41.682Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AyurColor.cs",
-              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\AyurColor.cs",
-              "RelativeDocumentMoniker": "AyurColor.cs",
-              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\AyurColor.cs",
-              "RelativeToolTip": "AyurColor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T14:44:29.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T14:31:02.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "AyurEvent.cs",
               "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\AyurEvent.cs",
               "RelativeDocumentMoniker": "AyurEvent.cs",
               "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\AyurEvent.cs",
               "RelativeToolTip": "AyurEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T15:08:16.95Z",
+              "WhenOpened": "2025-04-08T22:59:48.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Window.cs",
+              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Window.cs",
+              "RelativeDocumentMoniker": "Window.cs",
+              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\Window.cs",
+              "RelativeToolTip": "Window.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowFYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T22:58:07.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AyurColor.cs",
+              "DocumentMoniker": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\AyurColor.cs",
+              "RelativeDocumentMoniker": "AyurColor.cs",
+              "ToolTip": "C:\\Users\\ourab\\OneDrive\\Documents\\dev\\Ayur\\AyurColor.cs",
+              "RelativeToolTip": "AyurColor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T22:57:27.539Z",
               "EditorCaption": ""
             }
           ]

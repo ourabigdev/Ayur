@@ -1,17 +1,24 @@
-using SDL3;
+using System.Text;
+using SDL;
 
 namespace Ayur
 {
-    internal class Window
+    internal unsafe class Window
     {
-        public nint window;
-        public nint renderer;
+        private SDL_Window* window;
+        private SDL_Renderer* renderer;
 
         public bool Init()
         {
-            if (SDL.Init(SDL.InitFlags.Video) == false)
+            
+            if (SDL3.SDL_Init(SDL.SDL_InitFlags.SDL_INIT_VIDEO) == false)
             {
-                SDL.LogError(SDL.LogCategory.System, $"SDL could not initialize: {SDL.GetError()}");
+                string error = SDL3.SDL_GetError();
+                fixed (byte* fmt = Encoding.ASCII.GetBytes("SDL could not initialize: %s\0"))
+                {
+                    SDL3.SDL_LogError((int)SDL.SDL_LogCategory.SDL_LOG_CATEGORY_SYSTEM, fmt, __arglist(error));
+                }
+
                 return false;
             }
             return true;
@@ -19,20 +26,33 @@ namespace Ayur
 
         public bool CreateWindowAndRender(string title, int width, int height, AyurColor renderDrawColor)
         {
-            if (SDL.CreateWindowAndRenderer(title, width, height, 0, out window, out renderer) == false)
+            SDL_Window* localWindow;
+            SDL_Renderer* localRenderer;
+            fixed (byte* titlePtr = Encoding.ASCII.GetBytes(title + "\0"))
             {
-                SDL.LogError(SDL.LogCategory.Application, $"Error creating window and renderer: {SDL.GetError()}");
-                return false;
+                if (SDL3.SDL_CreateWindowAndRenderer(titlePtr, width, height, 0, &localWindow, &localRenderer) == false)
+                {
+                    string error = SDL3.SDL_GetError();
+                    fixed (byte* fmt = Encoding.ASCII.GetBytes("SDL could not initialize: %s\0"))
+                    {
+                        SDL3.SDL_LogError((int)SDL.SDL_LogCategory.SDL_LOG_CATEGORY_SYSTEM, fmt, __arglist(error));
+                    }
+                    return false;
+                }
             }
-            SDL.SetRenderDrawColor(renderer, renderDrawColor.r, renderDrawColor.g, renderDrawColor.b, renderDrawColor.a);
+            this.window = localWindow;
+            this.renderer = localRenderer;
+
+            SDL3.SDL_SetRenderDrawColor(renderer, renderDrawColor.r, renderDrawColor.g, renderDrawColor.b, renderDrawColor.a);
             return true;
         }
 
         public bool PollEvent(out AyurEvent ayurEvent)
         {
-            if(SDL.PollEvent(out SDL.Event e))
+            SDL.SDL_Event e;
+            if(SDL3.SDL_PollEvent(&e))
             {
-                if(e.Type == (uint)SDL.EventType.Quit)
+                if(e.Type == SDL_EventType.SDL_EVENT_QUIT)
                 {
                     ayurEvent = new AyurEvent { Type = AyurEventType.Quit };
                     return true;
@@ -48,23 +68,23 @@ namespace Ayur
 
         public void Clear()
         {
-            SDL.RenderClear(renderer);
+            SDL3.SDL_RenderClear(renderer);
         }
 
         public void Present()
         {
-            SDL.RenderPresent(renderer);
+            SDL3.SDL_RenderPresent(renderer);
         }
 
         public void Destroy()
         {
-            SDL.DestroyRenderer(renderer);
-            SDL.DestroyWindow(window);
+            SDL3.SDL_DestroyRenderer(renderer);
+            SDL3.SDL_DestroyWindow(window);
         }
 
         public void Quit()
         {
-            SDL.Quit();
+            SDL3.SDL_Quit();
         }
     }
 }
