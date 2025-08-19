@@ -16,14 +16,7 @@ internal static class Program
             return;
         }
 
-        var texture = Texture.LoadTextureFromImage("Res/logo.png", window.renderer);
-        if(texture == null)
-        {
-            Console.WriteLine("Failed to load texture");
-            window.Destroy();
-            window.Quit();
-            return;
-        }
+        
 
         var loop = true;
         AyurEvent e;
@@ -40,7 +33,7 @@ internal static class Program
 
             window.Clear();
 
-            texture.Render(window.renderer, 100, 100, 200, 200);
+            
 
             window.Present();
         }
