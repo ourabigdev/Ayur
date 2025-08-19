@@ -34,7 +34,7 @@ Organized by development status:
   SDL_QUIT working; more events like keyboard and mouse coming
 
 - 🖼️ **Basic Image Loading**  
-  Initial texture loading support using SDL_Surface and SDL_Texture
+  Initial texture loading support using SDL_image
 
 - 🎮 **Basic Input Handling**  
   Basic keyboard/mouse input is functional; expansion planned
