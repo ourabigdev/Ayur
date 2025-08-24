@@ -1,4 +1,6 @@
 ﻿using Ayur;
+using Ayur.Window;
+using Ayur.Texture;
 
 internal static class Program
 {
@@ -17,6 +19,14 @@ internal static class Program
         }
 
         
+        
+
+        var image = new Texture();
+
+        image.loadFromFile("Res/logo.png", window.renderer, window.window);
+
+
+        
 
         var loop = true;
         AyurEvent e;
@@ -33,11 +43,12 @@ internal static class Program
 
             window.Clear();
 
-            
+            image.render(100, 100);
 
-            window.Present();
+            window.Present(16);
         }
 
+        image.destroy();
         window.Destroy();
         window.Quit();
     }

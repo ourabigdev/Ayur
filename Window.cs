@@ -1,11 +1,12 @@
+using System.Runtime.InteropServices;
 using System.Text;
 using SDL;
 
-namespace Ayur
+namespace Ayur.Window
 {
     internal unsafe class Window
     {
-        private SDL_Window* window;
+        public SDL_Window* window;
         public SDL_Renderer* renderer;
 
 
@@ -72,9 +73,13 @@ namespace Ayur
             SDL3.SDL_RenderClear(renderer);
         }
 
-        public void Present()
+        public void Present([Optional]uint delayer)
         {
             SDL3.SDL_RenderPresent(renderer);
+            if(delayer != null)
+            {
+                SDL3.SDL_Delay(delayer);
+            }
         }
 
         public void Destroy()
