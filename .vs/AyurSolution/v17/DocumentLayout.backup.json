@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\ayurcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,12 +42,11 @@
               "RelativeToolTip": "AyurColor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T01:25:57.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T01:25:57.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Texture.cs",
               "DocumentMoniker": "D:\\DevProject\\Ayur\\Texture.cs",
               "RelativeDocumentMoniker": "Texture.cs",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "Texture.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAQwBsAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T16:44:53.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T16:44:53.279Z"
             },
             {
               "$type": "Document",
@@ -66,14 +64,14 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\DevProject\\Ayur\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwC8AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T12:34:45.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AyurEvent.cs",
               "DocumentMoniker": "D:\\DevProject\\Ayur\\AyurEvent.cs",
               "RelativeDocumentMoniker": "AyurEvent.cs",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "AyurEvent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T12:34:45.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T12:34:45.995Z"
             },
             {
               "$type": "Document",
@@ -92,10 +89,9 @@
               "RelativeDocumentMoniker": "Window.cs",
               "ToolTip": "D:\\DevProject\\Ayur\\Window.cs",
               "RelativeToolTip": "Window.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAowFAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwFAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T12:34:32.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T12:34:32.243Z"
             }
           ]
         }
