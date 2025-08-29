@@ -1,8 +1,8 @@
-﻿using Ayur.Window;
+﻿using Ayur.Core;
 using SDL;
 using System;
 
-namespace Ayur.Texture
+namespace Ayur.Rendering
 {
     internal unsafe class Texture
     {
@@ -25,7 +25,7 @@ namespace Ayur.Texture
             destroy();
         }
 
-        public bool loadFromFile(String path, SDL_Renderer* renderer, SDL_Window* window)
+        public bool loadFromFile(string path, SDL_Renderer* renderer, SDL_Window* window)
         {
             destroy();
             gRenderer = renderer;
@@ -70,8 +70,8 @@ namespace Ayur.Texture
             SDL_FRect dstRect = new SDL_FRect{
                 x = x, 
                 y = y,
-                w = (float) mWidth,
-                h = (float) mHeight,
+                w =  mWidth,
+                h =  mHeight,
             };
 
             SDL3.SDL_RenderTexture(gRenderer, mTexture, null, &dstRect);

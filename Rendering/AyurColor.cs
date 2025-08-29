@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Ayur
+namespace Ayur.Rendering
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct AyurColor

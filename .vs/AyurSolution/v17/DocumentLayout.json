@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "D:\\DevProject\\Ayur\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\rendering\\shapes\\rectangleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:rendering\\shapes\\rectangleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\rendering\\shapes\\circleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:rendering\\shapes\\circleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\rendering\\shapes\\lineshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:rendering\\shapes\\lineshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\ayurcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:ayurcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\rendering\\shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:rendering\\shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\rendering\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:rendering\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\core\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:core\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\rendering\\ayurcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:rendering\\ayurcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|d:\\devproject\\ayur\\core\\ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5127130-3B51-ABD8-F773-E70DBD18F071}|Ayur.csproj|solutionrelative:core\\ayurevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +50,137 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AyurColor.cs",
-              "DocumentMoniker": "D:\\DevProject\\Ayur\\AyurColor.cs",
-              "RelativeDocumentMoniker": "AyurColor.cs",
-              "ToolTip": "D:\\DevProject\\Ayur\\AyurColor.cs",
-              "RelativeToolTip": "AyurColor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T01:25:57.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Texture.cs",
-              "DocumentMoniker": "D:\\DevProject\\Ayur\\Texture.cs",
-              "RelativeDocumentMoniker": "Texture.cs",
-              "ToolTip": "D:\\DevProject\\Ayur\\Texture.cs",
-              "RelativeToolTip": "Texture.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAQwBsAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T16:44:53.279Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\DevProject\\Ayur\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "D:\\DevProject\\Ayur\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAcwJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-08-29T22:52:01.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CircleShape.cs",
+              "DocumentMoniker": "D:\\DevProject\\Ayur\\Rendering\\Shapes\\CircleShape.cs",
+              "RelativeDocumentMoniker": "Rendering\\Shapes\\CircleShape.cs",
+              "ToolTip": "D:\\DevProject\\Ayur\\Rendering\\Shapes\\CircleShape.cs",
+              "RelativeToolTip": "Rendering\\Shapes\\CircleShape.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T23:18:36.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Shape.cs",
+              "DocumentMoniker": "D:\\DevProject\\Ayur\\Rendering\\Shapes\\Shape.cs",
+              "RelativeDocumentMoniker": "Rendering\\Shapes\\Shape.cs",
+              "ToolTip": "D:\\DevProject\\Ayur\\Rendering\\Shapes\\Shape.cs",
+              "RelativeToolTip": "Rendering\\Shapes\\Shape.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T22:52:42.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DevProject\\Ayur\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\DevProject\\Ayur\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T12:34:45.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AyurEvent.cs",
-              "DocumentMoniker": "D:\\DevProject\\Ayur\\AyurEvent.cs",
-              "RelativeDocumentMoniker": "AyurEvent.cs",
-              "ToolTip": "D:\\DevProject\\Ayur\\AyurEvent.cs",
-              "RelativeToolTip": "AyurEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "LineShape.cs",
+              "DocumentMoniker": "D:\\DevProject\\Ayur\\Rendering\\Shapes\\LineShape.cs",
+              "RelativeDocumentMoniker": "Rendering\\Shapes\\LineShape.cs",
+              "ToolTip": "D:\\DevProject\\Ayur\\Rendering\\Shapes\\LineShape.cs",
+              "RelativeToolTip": "Rendering\\Shapes\\LineShape.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T12:34:45.995Z"
+              "WhenOpened": "2025-08-29T23:04:49.128Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Window.cs",
-              "DocumentMoniker": "D:\\DevProject\\Ayur\\Window.cs",
-              "RelativeDocumentMoniker": "Window.cs",
-              "ToolTip": "D:\\DevProject\\Ayur\\Window.cs",
-              "RelativeToolTip": "Window.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwFAAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RectangleShape.cs",
+              "DocumentMoniker": "D:\\DevProject\\Ayur\\Rendering\\Shapes\\RectangleShape.cs",
+              "RelativeDocumentMoniker": "Rendering\\Shapes\\RectangleShape.cs",
+              "ToolTip": "D:\\DevProject\\Ayur\\Rendering\\Shapes\\RectangleShape.cs",
+              "RelativeToolTip": "Rendering\\Shapes\\RectangleShape.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T12:34:32.243Z"
+              "WhenOpened": "2025-08-29T22:58:24.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Texture.cs",
+              "DocumentMoniker": "D:\\DevProject\\Ayur\\Rendering\\Texture.cs",
+              "RelativeDocumentMoniker": "Rendering\\Texture.cs",
+              "ToolTip": "D:\\DevProject\\Ayur\\Rendering\\Texture.cs",
+              "RelativeToolTip": "Rendering\\Texture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T16:44:53.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Window.cs",
+              "DocumentMoniker": "D:\\DevProject\\Ayur\\Core\\Window.cs",
+              "RelativeDocumentMoniker": "Core\\Window.cs",
+              "ToolTip": "D:\\DevProject\\Ayur\\Core\\Window.cs",
+              "RelativeToolTip": "Core\\Window.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAqwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T12:34:32.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AyurColor.cs",
+              "DocumentMoniker": "D:\\DevProject\\Ayur\\Rendering\\AyurColor.cs",
+              "RelativeDocumentMoniker": "Rendering\\AyurColor.cs",
+              "ToolTip": "D:\\DevProject\\Ayur\\Rendering\\AyurColor.cs",
+              "RelativeToolTip": "Rendering\\AyurColor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T01:25:57.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AyurEvent.cs",
+              "DocumentMoniker": "D:\\DevProject\\Ayur\\Core\\AyurEvent.cs",
+              "RelativeDocumentMoniker": "Core\\AyurEvent.cs",
+              "ToolTip": "D:\\DevProject\\Ayur\\Core\\AyurEvent.cs",
+              "RelativeToolTip": "Core\\AyurEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T12:34:45.995Z",
+              "EditorCaption": ""
             }
           ]
         }

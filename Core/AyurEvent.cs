@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ayur
+namespace Ayur.Core
 {
     public enum AyurEventType { 
         None,
