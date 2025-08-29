@@ -64,7 +64,7 @@ Organized by development status:
 ---
 
 ## 🧪 Example
-Check [`Program.cs`](./AyurCsharp/Program.cs) for a full example of using **window creation, events, image rendering, and shapes**.  
+Check [`./Program.cs`](./AyurCsharp/Program.cs) for a full example of using **window creation, events, image rendering, and shapes**.  
 
 ---
 
