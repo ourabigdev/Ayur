@@ -10,8 +10,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+<<<<<<< HEAD
       		<PackageReference Include="ppy.SDL3-CS" Version="2025.816.0" />
       		<PackageReference Include="ppy.SDL3_image-CS" Version="2025.816.0" />
+=======
+		<PackageReference Include="SDL3-CS" Version="3.2.10" />
+>>>>>>> parent of 9def947 (Added SDL3-CS.Native from Ayur.csproj)
 	</ItemGroup>
 
 </Project>
