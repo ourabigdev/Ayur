@@ -16,6 +16,9 @@
 =======
 		<PackageReference Include="SDL3-CS" Version="3.2.10" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 9def947 (Added SDL3-CS.Native from Ayur.csproj)
+=======
 >>>>>>> parent of 9def947 (Added SDL3-CS.Native from Ayur.csproj)
 =======
 >>>>>>> parent of 9def947 (Added SDL3-CS.Native from Ayur.csproj)
