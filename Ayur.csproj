@@ -10,7 +10,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="SDL3-CS" Version="3.2.10" />
+		<PackageReference Include="ppy.SDL3-CS" Version="2025.816.0" />
+		<PackageReference Include="ppy.SDL3_image-CS" Version="2025.816.0" />
 	</ItemGroup>
 
 </Project>
