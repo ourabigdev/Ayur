@@ -1,107 +1,75 @@
+## ✨ Features
 
-# Ayur Framework 🌿
+Organized by development status:
 
-Ayur is a lightweight, **game development** and **creative coding** framework built on **Raylib** (for now). The core functionality is implemented in **C** for optimal performance, while the API is designed in **C#** for ease of use.
+### ✅ Currently Available
+- 🪟 **Window Creation**  
+  Simple window management using SDL3  
 
-> **Note:** The framework is still in its early stages. We're currently working on a **switch to SDL3** (via the `SDL3_Switch` branch). The SDL3 GPU support will be used for future 3D features, but for now, the SDL3 version only supports windowing. 
+- 🖼️ **Image Loading & Rendering**  
+  Load textures from files and draw them in your window  
 
----
+- 🎨 **Color System (`AyurColor`)**  
+  Define colors using RGBA values (predefined colors like `Red`, `Green`, `Blue` coming soon)  
 
-## 🌟 Features
+- 🔷 **Shapes Rendering**  
+  - Rectangles (filled or outlined)  
+  - Lines  
+  - Circles (filled)  
 
-- **Core**: Written in **C** for performance (currently using Raylib for windowing and color support).
-- **API**: Easy-to-use **C#** API for rapid development.
-- **Lightweight**: Perfect for small games and creative coding.
-- **Cross-platform**: Integrates seamlessly with **Visual Studio** and supports multiple platforms.
-- **Future Plans**:
-  - Improved **C# API**.
-  - Custom rendering & shaders.
-  - UI system.
-  - Scene & Entity systems.
-  - Full SDL3 support to replace Raylib entirely.
-
----
-
-## 🔧 Requirements
-
-- **CMake** (min. version 3.21)
-- **C** and **C#** compilers.
-- **Raylib** (automatically fetched during the build process for now).
+- 🎮 **Basic Event System**  
+  `AyurEvent` with quit event support (more coming soon)  
 
 ---
 
-## ⚙️ Setup Process
+### 🛠 In Progress
+- 🌈 **Simpler Color Creation**  
+  Predefined color constants (e.g., `AyurColor.Red`)  
 
-### Unix-Based Systems 🐧
+- 🖱️ **Expanded Event Types**  
+  Keyboard, mouse, and more  
 
-1. **Install Dependencies**:
-   ```bash
-   sudo apt update
-   sudo apt install build-essential cmake clang libglfw3-dev libgl1-mesa-dev
-   ```
-
-2. **Clone the Repository**:
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
-   ```
-
-3. **Build the Framework**:
-   ```bash
-   mkdir build && cd build
-   cmake ..
-   make
-   ```
-
-4. **Run Example App**:
-   ```bash
-   dotnet run --project build/Framework/AyurCsharp.csproj
-   ```
+- 🔺 **Additional Shapes**  
+  Triangles, polygons, and more primitives  
 
 ---
 
-### Windows (Visual Studio) 🖥️
+### 🌱 Future Features
 
-1. **Install Visual Studio**:
-   - Download Visual Studio (Community Edition is fine).
-   - Select the following workloads:
-     - Desktop development with C++.
-     - .NET Desktop development.
+#### 🎮 Game & Creative Coding
+- 🎞️ **Animation System**  
+  - Math-based animations (tweening, smooth transitions)  
+  - Sprite animation helpers for texture animation  
 
-2. **Clone the Repository**:
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
-   ```
+- 💡 **Shader Support**  
+  Ability to use custom fragment & vertex shaders (planned)  
 
-3. **Build the Framework**:
-   ```bash
-   mkdir build && cd build
-   cmake .. -G "Visual Studio 17 2022"
-   ```
-   - Open `Ayur.sln` in Visual Studio.
-   - Build the solution in **Debug** or **Release** mode.
+- 🧩 **Creative Coding Features**  
+  Inspired by **Processing**, **p5.js**, and similar frameworks  
 
-4. **Run Example App**:
-   - Locate the built executable and run it.
+#### 🛠 Tools & Platform
+- 🧠 **Input Handling**  
+  Full keyboard, mouse, and gamepad support with remapping  
+
+- 🌐 **Cross-Platform Improvements**  
+  Better Linux and macOS support  
 
 ---
 
-## 🤝 Contributions
-
-Ayur is **open-source** and welcomes contributions! Feel free to:
-- Fork the repo.
-- Submit issues.
-- Open pull requests.
+## 📦 Requirements
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)  
+- C# IDE (e.g. Visual Studio, VS Code)  
+- SDL3 (already handled via C# wrapper, no native setup needed)  
 
 ---
 
-## 📜 License
-
-Ayur is released under the **MIT License**, allowing free usage, modification, and distribution. See the [LICENSE](https://github.com/ourabigdev/Ayur/blob/master/LICENSE) for more details.
+## 🧪 Example
+Check [`Program.cs`](./Program.cs) for a full example of using **window creation, events, image rendering, and shapes**.  
 
 ---
 
-## 👨‍💻 Developer
+## 🖼️ Showcase
 
-Developed and maintained by **ourabigdev** (hatim).
+Here’s a snapshot (`Res/Hello.png`) showing all currently available rendering features:  
+
+![Ayur Showcase](./Res/Hello.png)  
