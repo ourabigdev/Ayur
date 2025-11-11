@@ -1,6 +1,7 @@
 ﻿using Ayur.Rendering;
 using Ayur.Rendering.Shapes;
 using Ayur.Core;
+using System.Drawing;
 
 internal static class Program
 {
@@ -13,15 +14,15 @@ internal static class Program
             return;
         }
 
-        if (!window.CreateWindowAndRender("hello", 800, 600, new AyurColor(100, 149, 237)))
+        if (!window.CreateWindowAndRender("hello", 800, 600, Color.Brown))
         {
             return;
         }
 
-        var rect = new RectangleShape(50, 50, 200, 100, new AyurColor(255, 0, 0), filled: true);
-        var rect2 = new RectangleShape(450, 50, 200, 100, new AyurColor(255, 0, 255), filled: false);
-        var line = new LineShape(450, 450, 500, 300, new AyurColor(0, 0, 255));
-        var circle = new CircleShape(700, 300, 50, new AyurColor(0, 255, 255));
+        var rect = new RectangleShape(50, 50, 200, 100, Color.Tan, filled: true);
+        var rect2 = new RectangleShape(450, 50, 200, 100, AyurColor.Red, filled: false);
+        var line = new LineShape(450, 450, 500, 300, AyurColor.Blue);
+        var circle = new CircleShape(700, 300, 50, AyurColor.Green);
 
         var image = new Texture();
 

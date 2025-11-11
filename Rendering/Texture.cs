@@ -1,6 +1,4 @@
-﻿using Ayur.Core;
-using SDL;
-using System;
+﻿using SDL;
 
 namespace Ayur.Rendering
 {
