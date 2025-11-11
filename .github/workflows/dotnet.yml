@@ -22,10 +22,11 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Restore dependencies
-      run: dotnet restore ../Ayur.csproj
+      run: dotnet restore Ayur.csproj
 
     - name: Build
-      run: dotnet build ../Ayur.csproj --no-restore --configuration Release
+      run: dotnet build Ayur.csproj --no-restore --configuration Release
 
     - name: Test
-      run: dotnet test ../Ayur.csproj --no-build --verbosity normal
+      run: dotnet test Ayur.csproj --no-build --verbosity normal
+
