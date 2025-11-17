@@ -3,59 +3,17 @@ using Ayur.Rendering.Shapes;
 using Ayur.Core;
 using System.Drawing;
 
+namespace Example;
 internal static class Program
 {
     [STAThread]
     private unsafe static void Main()
     {
-        var window = new Window();
-        if (!window.Init())
-        {
+        var game = new MyGame();
+        var runner = new GameRunner(game);
+
+        if(!runner.Init("My Ayur Game", 800, 600, AyurColor.Black))
             return;
-        }
-
-        if (!window.CreateWindowAndRender("hello", 800, 600, Color.Brown))
-        {
-            return;
-        }
-
-        var rect = new RectangleShape(50, 50, 200, 100, Color.Tan, filled: true);
-        var rect2 = new RectangleShape(450, 50, 200, 100, AyurColor.Red, filled: false);
-        var line = new LineShape(450, 450, 500, 300, AyurColor.Blue);
-        var circle = new CircleShape(700, 300, 50, AyurColor.Green);
-
-        var image = new Texture();
-
-        image.loadFromFile("Res/logo.png", window.renderer, window.window);
-        
-
-        var loop = true;
-        AyurEvent e;
-
-        while (loop)
-        {
-            while (window.PollEvent(out e))
-            {
-                if (e.Type == AyurEventType.Quit)
-                {
-                    loop = false;
-                }
-            }
-
-            window.Clear();
-
-            rect.Render(window.renderer);
-            rect2.Render(window.renderer);
-            line.Render(window.renderer);
-            circle.Render(window.renderer);
-
-            image.render(100, 100);
-
-            window.Present(16);
-        }
-
-        image.destroy();
-        window.Destroy();
-        window.Quit();
+        runner.Run();
     }
 }
