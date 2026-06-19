@@ -27,6 +27,6 @@ namespace Ayur.Core
         public virtual void Render() { }
 
         /// <summary>Internal: Window reference managed by GameRunner</summary>
-        internal Window Window { get; set; }
+        internal Window? Window { get; set; }
     }
 }
