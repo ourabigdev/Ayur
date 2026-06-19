@@ -153,7 +153,6 @@ MIT License - Use freely in your projects
 
 We welcome contributions! Please keep in mind:
 - Simplicity first - no complex abstractions
-- No MonoGame-like patterns
 - Good documentation with inline comments
 - Cross-platform support (Windows/Linux/macOS)
 - Type-safe (leverage nullable reference types)
