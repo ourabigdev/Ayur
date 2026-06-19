@@ -87,14 +87,14 @@ Ayur/
 
 ## 💡 Key Features
 
-✅ **Simple Game Loop** - Load, Update, Render lifecycle
-✅ **60 FPS Frame Control** - Smooth animations
-✅ **Basic Shapes** - Rectangles, circles, lines
-✅ **Image Loading** - PNG, JPG, BMP support
-✅ **Color System** - 8 presets + custom colors
-✅ **Cross-Platform** - Windows, Linux, macOS
-✅ **Type-Safe** - .NET 10 nullable reference types
-✅ **Well-Documented** - Every class has detailed comments
+- **Simple Game Loop** - Load, Update, Render lifecycle
+- **60 FPS Frame Control** - Smooth animations
+- **Basic Shapes** - Rectangles, circles, lines
+- **Image Loading** - PNG, JPG, BMP support
+- **Color System** - 8 presets + custom colors
+- **Cross-Platform** - Windows, Linux, macOS
+- **Type-Safe** - .NET 10 nullable reference types
+- **Well-Documented** - Every class has detailed comments
 
 ## 🎮 Example Games
 
