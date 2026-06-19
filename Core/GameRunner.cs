@@ -4,16 +4,17 @@ using System.Diagnostics;
 namespace Ayur.Core
 {
     /// <summary>
-    /// Manages the main game loop and window lifecycle.
-    /// This class is internal and handles the relationship between your Game and the Window.
+    /// Manages the game loop and window lifecycle.
+    /// This is the minimal game loop: input -> update -> render -> frame limit.
+    /// Everything is straightforward - no unnecessary complexity.
     /// </summary>
     internal class GameRunner
     {
         private readonly Game game;
         private readonly Window window;
         private bool running = true;
-        
-        // Target frame rate (60 FPS)
+
+        // Fixed frame rate: 60 FPS (16.67ms per frame)
         private const int TargetFPS = 60;
         private const int FrameTimeMs = 1000 / TargetFPS;
 
@@ -23,27 +24,27 @@ namespace Ayur.Core
             this.window = new Window();
         }
 
-        /// <summary>
-        /// Initialize the game window and prepare for running.
-        /// </summary>
+        /// <summary>Initialize window and prepare game to run</summary>
         public bool Init(string title, int width, int height, AyurColor backgroundColor)
         {
             if (!window.Init())
                 return false;
+
             if (!window.CreateWindowAndRender(title, width, height, backgroundColor))
                 return false;
 
-            // Give game reference to window
+            // Give game access to window for rendering
             game.Window = window;
             return true;
         }
 
         /// <summary>
         /// Start the main game loop.
+        /// Runs until user closes window or game requests quit.
         /// </summary>
         public void Run()
         {
-            // Load game resources
+            // Load resources once
             game.Load();
 
             var stopwatch = new Stopwatch();
@@ -53,23 +54,23 @@ namespace Ayur.Core
             {
                 stopwatch.Restart();
 
-                // Poll and handle events
+                // 1. POLL EVENTS - Handle quit and input
                 while (window.PollEvent(out e))
                 {
                     if (e.Type == AyurEventType.Quit)
                         running = false;
                 }
 
-                // Update game logic
-                float dt = FrameTimeMs / 1000f;
+                // 2. UPDATE - Update game logic
+                float dt = FrameTimeMs / 1000f; // Convert ms to seconds
                 game.Update(dt);
 
-                // Render
+                // 3. RENDER - Draw everything
                 window.Clear();
                 game.Render();
                 window.Present();
 
-                // Frame rate limiting (lock to 60 FPS)
+                // 4. FRAME LIMITING - Lock to 60 FPS
                 long elapsed = stopwatch.ElapsedMilliseconds;
                 if (elapsed < FrameTimeMs)
                     Thread.Sleep((int)(FrameTimeMs - elapsed));

@@ -1,31 +1,32 @@
 namespace Ayur.Core
 {
     /// <summary>
-    /// Base class for creating games with Ayur.
-    /// Override Load(), Update(), and Render() to implement your game logic.
+    /// Base class for all Ayur games.
+    /// Override Load(), Update(), and Render() to create your game.
+    /// Keep it simple - this is the contract between framework and user code.
     /// </summary>
     public abstract class Game
     {
         /// <summary>
-        /// Called once when the game starts.
-        /// Use this to load resources and initialize game state.
+        /// Called once at game startup.
+        /// Load resources here: textures, shapes, initial values.
         /// </summary>
         public virtual void Load() { }
 
         /// <summary>
-        /// Called every frame with delta time.
-        /// Use this for game logic and updating entity positions.
+        /// Called every frame (~60 times per second).
+        /// Update game logic here: move objects, check collisions, etc.
         /// </summary>
-        /// <param name="dt">Delta time in seconds</param>
+        /// <param name="dt">Delta time since last frame (in seconds)</param>
         public virtual void Update(float dt) { }
 
         /// <summary>
-        /// Called every frame to render graphics.
-        /// Use draw functions from Ayur to render your game.
+        /// Called every frame after Update().
+        /// Render graphics here: draw shapes, textures, etc.
         /// </summary>
         public virtual void Render() { }
 
-        /// <summary>Internal reference to the window (managed by GameRunner)</summary>
+        /// <summary>Internal: Window reference managed by GameRunner</summary>
         internal Window Window { get; set; }
     }
 }

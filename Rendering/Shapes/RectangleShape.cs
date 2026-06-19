@@ -3,19 +3,20 @@ using SDL;
 namespace Ayur.Rendering.Shapes
 {
     /// <summary>
-    /// A rectangle shape that can be filled or outlined.
+    /// A rectangle: can be filled solid or just outlined.
+    /// Simple shape - no rotation or complex transformations.
     /// </summary>
     internal unsafe class RectangleShape : Shape
     {
-        /// <summary>X position</summary>
+        /// <summary>Left edge X position</summary>
         public float X { get; set; }
-        /// <summary>Y position</summary>
+        /// <summary>Top edge Y position</summary>
         public float Y { get; set; }
         /// <summary>Width in pixels</summary>
         public float Width { get; set; }
         /// <summary>Height in pixels</summary>
         public float Height { get; set; }
-        /// <summary>True for filled rectangle, false for outline</summary>
+        /// <summary>True = filled, False = outlined only</summary>
         public bool Filled { get; set; }
 
         /// <summary>Create a rectangle</summary>
@@ -29,8 +30,8 @@ namespace Ayur.Rendering.Shapes
             Filled = filled;
         }
 
-        /// <summary>Render the rectangle</summary>
-        public override unsafe void Render(SDL_Renderer* renderer)
+        /// <summary>Draw the rectangle</summary>
+        public override void Render(SDL_Renderer* renderer)
         {
             SDL3.SDL_SetRenderDrawColor(renderer, Color.r, Color.g, Color.b, Color.a);
 

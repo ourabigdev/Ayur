@@ -1,18 +1,24 @@
 namespace Ayur.Core
 {
-    /// <summary>Types of events that can be triggered</summary>
+    /// <summary>
+    /// Event types the framework recognizes.
+    /// Minimal set - only essential events.
+    /// </summary>
     public enum AyurEventType
     {
         /// <summary>No event</summary>
         None,
-        /// <summary>Window close/quit requested</summary>
+        /// <summary>User requested window close</summary>
         Quit,
     }
 
-    /// <summary>Represents an event in the engine</summary>
+    /// <summary>
+    /// Represents a single event.
+    /// Simple struct - no unnecessary complexity.
+    /// </summary>
     public struct AyurEvent
     {
-        /// <summary>Type of this event</summary>
+        /// <summary>What type of event is this?</summary>
         public AyurEventType Type;
     }
 }
