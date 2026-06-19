@@ -1,93 +1,104 @@
-﻿using SDL;
+using SDL;
 
 namespace Ayur.Rendering
 {
+    /// <summary>
+    /// Represents an image/texture that can be drawn on screen.
+    /// </summary>
     internal unsafe class Texture
     {
-        //private
         private SDL_Texture* mTexture;
         private int mWidth;
         private int mHeight;
-        private SDL_Window* gWindow;
         private SDL_Renderer* gRenderer;
 
-
-        /*public Texture(SDL_Texture* mTexture, int mWidth, int mHeight)
-        {
-            this.mTexture = mTexture;
-            this.mWidth = mWidth;
-            this.mHeight = mHeight;
-        }*/
         ~Texture()
         {
-            destroy();
+            Destroy();
         }
 
-        public bool loadFromFile(string path, SDL_Renderer* renderer, SDL_Window* window)
+        /// <summary>
+        /// Load a texture from an image file.
+        /// </summary>
+        /// <param name="path">Path to the image file (PNG, JPG, etc.)</param>
+        /// <param name="renderer">SDL renderer</param>
+        /// <param name="window">SDL window</param>
+        public bool LoadFromFile(string path, SDL_Renderer* renderer, SDL_Window* window)
         {
-            destroy();
+            Destroy();
             gRenderer = renderer;
-            gWindow = window;
 
-            SDL_Surface* loadedSurface = SDL3_image.IMG_Load(path.ToString());
-            if (loadedSurface == null)
+            // Load image surface
+            SDL_Surface* surface = SDL3_image.IMG_Load(path);
+            if (surface == null)
             {
-                Console.WriteLine($"Unable to load image {path.ToString()}! SDL_image error: {SDL3.SDL_GetError()}\n");
-            }
-            else
-            {
-                mTexture = SDL3.SDL_CreateTextureFromSurface(gRenderer, loadedSurface);
-                if (mTexture == null)
-                {
-                    Console.WriteLine($"\"Unable to create texture from loaded pixels! SDL error: {SDL3.SDL_GetError()}\n");
-                }
-                else
-                {
-                    mWidth = loadedSurface->w;
-                    mHeight = loadedSurface->h;
-                }
-                SDL3.SDL_DestroySurface(loadedSurface);
+                Console.WriteLine($"Failed to load image: {path}");
+                return false;
             }
 
-            return mTexture != null;
+            // Create texture from surface
+            mTexture = SDL3.SDL_CreateTextureFromSurface(renderer, surface);
+            if (mTexture == null)
+            {
+                Console.WriteLine($"Failed to create texture from {path}");
+                SDL3.SDL_DestroySurface(surface);
+                return false;
+            }
 
+            mWidth = surface->w;
+            mHeight = surface->h;
+            SDL3.SDL_DestroySurface(surface);
+
+            return true;
         }
 
-
-        public void destroy()
+        /// <summary>Render the texture at the specified position</summary>
+        public void Render(float x, float y)
         {
-            SDL3.SDL_DestroyTexture(mTexture);
-            mTexture = null;
-            mWidth = 0;
-            mHeight = 0;
-        }
-        
-        public void render(float x, float y)
-        {
-            
-            SDL_FRect dstRect = new SDL_FRect{
-                x = x, 
+            SDL_FRect rect = new()
+            {
+                x = x,
                 y = y,
-                w =  mWidth,
-                h =  mHeight,
+                w = mWidth,
+                h = mHeight,
             };
 
-            SDL3.SDL_RenderTexture(gRenderer, mTexture, null, &dstRect);
+            SDL3.SDL_RenderTexture(gRenderer, mTexture, null, &rect);
         }
 
-        public int getWidth()
+        /// <summary>Render the texture at position with custom width/height</summary>
+        public void Render(float x, float y, float width, float height)
         {
-            return mWidth;
+            SDL_FRect rect = new()
+            {
+                x = x,
+                y = y,
+                w = width,
+                h = height,
+            };
+
+            SDL3.SDL_RenderTexture(gRenderer, mTexture, null, &rect);
         }
 
-        public int getHeight()
-        {
-            return mHeight;
-        }
+        /// <summary>Get texture width in pixels</summary>
+        public int GetWidth() => mWidth;
 
-        public bool isLoaded()
+        /// <summary>Get texture height in pixels</summary>
+        public int GetHeight低() => mHeight;
+
+        /// <summary>Check if texture is loaded</summary>
+        public bool IsLoaded() => mTexture != null;
+
+        /// <summary>Destroy and free the texture</summary>
+        public void Destroy()
         {
-            return mTexture != null;
+            if (mTexture != null)
+            {
+                SDL3.SDL_DestroyTexture(mTexture);
+                mTexture = null;
+            }
+            mWidth = 0;
+            mHeight = 0;
         }
     }
 }
